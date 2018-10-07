@@ -1,10 +1,6 @@
 FROM python:3.7-alpine
 LABEL maintainer="Clément <plopoyop@gmail.com>"
 
-ENV SSH_PRIV_KEY id_rsa
-
-VOLUME /tmp/ssh
-
 RUN apk add --no-cache \
         openssl \
         su-exec
