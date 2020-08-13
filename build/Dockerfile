@@ -19,8 +19,6 @@ RUN set -e; \
         paramiko; \
     apk del .build-deps;
 
-RUN pip install mycli
-
 RUN adduser user -D
 
 COPY entrypoint.sh /entrypoint.sh
